@@ -1061,3 +1061,21 @@ button:hover, .form-container .btn:hover {
 #About {
     scroll-margin-top: 70px;
 }
+
+/* Make both grid images the same visual size */
+.grid-container .About img,
+.grid-container .GitHub img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .grid-container .About img,
+    .grid-container .GitHub img {
+        max-width: 300px;
+    }
+}
