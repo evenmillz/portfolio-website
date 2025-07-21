@@ -193,8 +193,10 @@ footer {
 /* Main Navbar Container */
 .Navbar {
 
-    /* Hides any content that goes beyond the navbar’s limits */
-    overflow: hidden; 
+    /* overflow: hidden; */ /* Replaced by Flexbox */
+    display: flex; /* Use Flexbox for better alignment */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Vertically center items */
 
     /* Sets the navbar background color to black */
     background-color: black; 
@@ -224,9 +226,6 @@ footer {
 
 /* Navbar Links Styling */
 .Navbar a {
-
-    /* Positions the links from left to right */
-    float: left; 
 
     /* Ensures links appear as clickable blocks */
     display: block; 
@@ -957,9 +956,6 @@ button:hover, .form-container .btn:hover {
 @media screen and (max-width: 1080px) {
     .Navbar a {
 
-
-        /* Sets navbar links to take up equal space */
-        width: 20%;
 
         /* Increases font size for readability */
         font-size: 2.5vw;
